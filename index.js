@@ -7,6 +7,7 @@ app.get('/', (req, res) => {
     res.status(200).send("Home page");
 });
 
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
     console.log("Application started on port 3000");
 })
